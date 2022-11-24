@@ -1119,7 +1119,7 @@ class ToolbarWidgetState extends State<ToolbarWidget> {
                             onColorChanged: (color) {
                               newColor = color;
                             },
-                            title: Text('Choose a Color',
+                            title: Text('선택하세요',
                                 style: Theme.of(context).textTheme.headline6),
                             width: 40,
                             height: 40,
@@ -1146,7 +1146,7 @@ class ToolbarWidgetState extends State<ToolbarWidget> {
                               onPressed: () {
                                 Navigator.of(context).pop();
                               },
-                              child: Text('Cancel'),
+                              child: Text('취소'),
                             ),
                             TextButton(
                                 onPressed: () {
@@ -1174,7 +1174,7 @@ class ToolbarWidgetState extends State<ToolbarWidget> {
                                   }
                                   Navigator.of(context).pop();
                                 },
-                                child: Text('Reset to default color')),
+                                child: Text('초기화')),
                             TextButton(
                               onPressed: () {
                                 if (t.getIcons()[index].icon ==
@@ -1205,7 +1205,7 @@ class ToolbarWidgetState extends State<ToolbarWidget> {
                                 });
                                 Navigator.of(context).pop();
                               },
-                              child: Text('Set color'),
+                              child: Text('확인'),
                             )
                           ],
                         ),
@@ -1884,7 +1884,7 @@ class ToolbarWidgetState extends State<ToolbarWidget> {
                                 onPressed: () {
                                   Navigator.of(context).pop();
                                 },
-                                child: Text('Cancel'),
+                                child: Text('취소'),
                               ),
                               TextButton(
                                 onPressed: () async {
@@ -1911,7 +1911,7 @@ class ToolbarWidgetState extends State<ToolbarWidget> {
                                     Navigator.of(context).pop();
                                   }
                                 },
-                                child: Text('OK'),
+                                child: Text('확인'),
                               )
                             ],
                           );
@@ -1937,16 +1937,12 @@ class ToolbarWidgetState extends State<ToolbarWidget> {
                         child: StatefulBuilder(builder:
                             (BuildContext context, StateSetter setState) {
                           return AlertDialog(
-                            title: Text('Insert Image'),
+                            title: Text('이미지 선택하기'),
                             scrollable: true,
                             content: Column(
                                 mainAxisSize: MainAxisSize.min,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text('Select from files',
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold)),
-                                  SizedBox(height: 10),
                                   TextFormField(
                                       controller: filename,
                                       readOnly: true,
@@ -1975,7 +1971,7 @@ class ToolbarWidgetState extends State<ToolbarWidget> {
                                               });
                                             }
                                           },
-                                          child: Text('Choose image',
+                                          child: Text('파일 선택하기',
                                               style: TextStyle(
                                                   color: Theme.of(context)
                                                       .textTheme
@@ -1996,29 +1992,13 @@ class ToolbarWidgetState extends State<ToolbarWidget> {
                                         errorMaxLines: 2,
                                         border: InputBorder.none,
                                       )),
-                                  SizedBox(height: 20),
-                                  Text('URL',
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold)),
-                                  SizedBox(height: 10),
-                                  TextField(
-                                    controller: url,
-                                    focusNode: urlFocus,
-                                    textInputAction: TextInputAction.done,
-                                    decoration: InputDecoration(
-                                      border: OutlineInputBorder(),
-                                      hintText: 'URL',
-                                      errorText: validateFailed,
-                                      errorMaxLines: 2,
-                                    ),
-                                  ),
                                 ]),
                             actions: [
                               TextButton(
                                 onPressed: () {
                                   Navigator.of(context).pop();
                                 },
-                                child: Text('Cancel'),
+                                child: Text('취소'),
                               ),
                               TextButton(
                                 onPressed: () async {
@@ -2063,7 +2043,7 @@ class ToolbarWidgetState extends State<ToolbarWidget> {
                                     Navigator.of(context).pop();
                                   }
                                 },
-                                child: Text('OK'),
+                                child: Text('확인'),
                               )
                             ],
                           );
@@ -2170,7 +2150,7 @@ class ToolbarWidgetState extends State<ToolbarWidget> {
                                 onPressed: () {
                                   Navigator.of(context).pop();
                                 },
-                                child: Text('Cancel'),
+                                child: Text('취소'),
                               ),
                               TextButton(
                                 onPressed: () async {
@@ -2215,7 +2195,7 @@ class ToolbarWidgetState extends State<ToolbarWidget> {
                                     Navigator.of(context).pop();
                                   }
                                 },
-                                child: Text('OK'),
+                                child: Text('확인'),
                               )
                             ],
                           );
@@ -2322,7 +2302,7 @@ class ToolbarWidgetState extends State<ToolbarWidget> {
                                 onPressed: () {
                                   Navigator.of(context).pop();
                                 },
-                                child: Text('Cancel'),
+                                child: Text('취소'),
                               ),
                               TextButton(
                                 onPressed: () async {
@@ -2367,7 +2347,7 @@ class ToolbarWidgetState extends State<ToolbarWidget> {
                                     Navigator.of(context).pop();
                                   }
                                 },
-                                child: Text('OK'),
+                                child: Text('확인'),
                               )
                             ],
                           );
@@ -2474,7 +2454,7 @@ class ToolbarWidgetState extends State<ToolbarWidget> {
                                 onPressed: () {
                                   Navigator.of(context).pop();
                                 },
-                                child: Text('Cancel'),
+                                child: Text('취소'),
                               ),
                               TextButton(
                                 onPressed: () {
@@ -2502,7 +2482,7 @@ class ToolbarWidgetState extends State<ToolbarWidget> {
                                     Navigator.of(context).pop();
                                   }
                                 },
-                                child: Text('OK'),
+                                child: Text('확인'),
                               )
                             ],
                           );
@@ -2553,7 +2533,7 @@ class ToolbarWidgetState extends State<ToolbarWidget> {
                                 onPressed: () {
                                   Navigator.of(context).pop();
                                 },
-                                child: Text('Cancel'),
+                                child: Text('취소'),
                               ),
                               TextButton(
                                 onPressed: () async {
@@ -2568,7 +2548,7 @@ class ToolbarWidgetState extends State<ToolbarWidget> {
                                   }
                                   Navigator.of(context).pop();
                                 },
-                                child: Text('OK'),
+                                child: Text('확인'),
                               )
                             ],
                           );
