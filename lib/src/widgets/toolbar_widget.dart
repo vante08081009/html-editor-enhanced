@@ -1119,8 +1119,6 @@ class ToolbarWidgetState extends State<ToolbarWidget> {
                             onColorChanged: (color) {
                               newColor = color;
                             },
-                            title: Text('선택하세요',
-                                style: Theme.of(context).textTheme.headline6),
                             width: 40,
                             height: 40,
                             spacing: 0,
@@ -1937,7 +1935,6 @@ class ToolbarWidgetState extends State<ToolbarWidget> {
                         child: StatefulBuilder(builder:
                             (BuildContext context, StateSetter setState) {
                           return AlertDialog(
-                            title: Text('이미지 선택하기'),
                             scrollable: true,
                             content: Column(
                                 mainAxisSize: MainAxisSize.min,
@@ -1971,7 +1968,7 @@ class ToolbarWidgetState extends State<ToolbarWidget> {
                                               });
                                             }
                                           },
-                                          child: Text('파일 선택하기',
+                                          child: Text('이미지 선택하기',
                                               style: TextStyle(
                                                   color: Theme.of(context)
                                                       .textTheme
